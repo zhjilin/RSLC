@@ -44,8 +44,7 @@ Note: File name should have only one underscore in it. Whatever preceeds undersc
 
 This is a wrapper of the above script that will execute UMI counting for more than 2 input files and merge individual count files.
 
-ALERT: Don't count too many files at the same time (< cpu numbers), because it runs as many processes as your input fastq files. This can kill your computer; thus please think about what you are going to do first! More than that, each fastq file probably requires a lot of memory, it means the memory will be file numbers* memory usage!!!
-
+ALERT: Don't count too many files at the same time (< cpu numbers), because it runs as many processes as your input fastq files and requires requires a lot of memory.
 
 2.2.1 Usage:
 

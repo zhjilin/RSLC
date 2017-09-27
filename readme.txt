@@ -44,7 +44,7 @@ Note: File name should have only one underscore in it. Whatever preceeds undersc
 
 This is a wrapper of the above script that will execute UMI counting for more than 2 input files and merge individual count files.
 
-ALERT: Don't count too many files at the same time (< cpu numbers), because it runs as many processes as your input fastq files and requires requires a lot of memory.
+ALERT: Don't count too many files at the same time (< cpu numbers), because it runs as many processes as your input fastq files and requires a lot of memory.
 
 2.2.1 Usage:
 
@@ -63,7 +63,7 @@ The --step argument can also be used to only merge count files if UMIs were indi
 
 3.1 normalization20170111.R
 
-This is the core R script to calculate the SSMD score for just for one treatment vs control.
+This is the core R script to calculate the SSMD score for one treatment vs control.
 
  
 3.1.1 Usage: 
@@ -76,9 +76,9 @@ Rscript --vanilla normalization20170111.R summary_count.output.raw output_prefix
 
 3.2  SSMD_calculator.sh
 
-This can be used in a time course experiment. For example when one wants to compare several time points of the screen with one control (Day4 vs Day10, Day15, Day20, Day30)
+This can be used for pairwise comparison of several treatments (i.e. time points) with one control (Day4 vs Day10, Day15, Day20, Day30)
 
-This shell script is wrapper to parse the big table in order to get pairwise tables (traits against control) to calculate SSMD score. Five arguments must be provided.
+This shell script is a wrapper to parse the big table in order to get pairwise tables (traits against control) to calculate SSMD score. Five arguments must be provided.
 
 To see the help information: 
 ./SSMD_calculator.sh

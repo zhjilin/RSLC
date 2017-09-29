@@ -59,7 +59,7 @@ else{
     push @file,$List;
 }
 
-my $program="GuideUMI-p0.1.pl";
+my $program="GuideUMI-count-p0.1.pl";
 my $para="--library $Alien --nmerge $Lnum ";
 $para.="--n $Num " if($Num >0);
 $para.="--mismatch $Mismatch " if(defined $Mismatch && $Mismatch >=1);

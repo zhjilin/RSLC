@@ -2,7 +2,7 @@
 =head1 USAGE
 
 
-    perl GuideUMI-p0.1.pl --library TF_guides_file fastq
+    perl GuideUMI-count-p0.1.pl --library TF_guides_file fastq
     
     options:
     --library   str, comma separated table containing the information of TF guides, shuold be "identifier,guide,gene_name"
